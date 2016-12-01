@@ -33,6 +33,12 @@
 		"oAP": "\/category.php",
 		"oF": 0
 		},
+	"\/CHANGELOG.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/CHANGELOG.html",
+		"oF": 0
+		},
 	"\/CHANGELOG.md": {
 		"cS": 0,
 		"eF": 1,
@@ -126,33 +132,6 @@
 		"oA": 2,
 		"oAP": "\/index.php",
 		"oF": 0
-		},
-	"\/js\/lib\/conditionizr-4.3.0.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/lib\/conditionizr-4.3.0.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/lib\/modernizr-2.7.1.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/lib\/modernizr-2.7.1.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/scripts.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/scripts-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
 		},
 	"\/languages\/de_DE.mo": {
 		"ft": 8192,
@@ -268,6 +247,174 @@
 		"oAP": "\/languages\/ro_RO.po",
 		"oF": 0
 		},
+	"\/lib\/asset\/img\/FluxLanding-BG.jpg": {
+		"ft": 16384,
+		"iS": 1424464,
+		"oA": 0,
+		"oAP": "\/lib\/asset\/img\/FluxLanding-BG.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lib\/asset\/img\/FluxLogo-Lockup.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/lib\/asset\/img\/FluxLogo-Lockup.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/lib\/asset\/img\/FluxLogo-Text.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/lib\/asset\/img\/FluxLogo-Text.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/lib\/sass\/_lib-colours.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/lib\/sass\/_lib-colours.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/lib\/sass\/_lib-fonts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/lib\/sass\/_lib-fonts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/lib\/sass\/_lib-reset.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/lib\/sass\/_lib-reset.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/lib\/sass\/_lib-settings.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/lib\/sass\/_lib-settings.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/lib\/sass\/_site-layout.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/lib\/sass\/_site-layout.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/lib\/sass\/style-min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/lib\/sass\/style-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/lib\/sass\/style.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/lib\/sass\/style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/lib\/sass\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/style.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/lib\/script\/js\/conditionizr-4.3.0.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/lib\/script\/js\/conditionizr-4.3.0.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/lib\/script\/js\/modernizr-2.7.1.min-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/lib\/script\/js\/modernizr-2.7.1.min-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/lib\/script\/js\/modernizr-2.7.1.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/lib\/script\/js\/modernizr-2.7.1.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/lib\/script\/js\/scripts.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/lib\/script\/js\/scripts-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/LICENSE.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/LICENSE.html",
+		"oF": 0
+		},
 	"\/LICENSE.md": {
 		"cS": 0,
 		"eF": 1,
@@ -291,6 +438,16 @@
 		"oA": 2,
 		"oAP": "\/loop.php",
 		"oF": 0
+		},
+	"\/normalize-min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/normalize-min-min.css",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/normalize.css": {
 		"aP": 0,
@@ -322,6 +479,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/pagination.php",
+		"oF": 0
+		},
+	"\/README.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/README.html",
 		"oF": 0
 		},
 	"\/README.md": {
@@ -384,16 +547,22 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/style.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/style.css.map",
+		"oF": 0
+		},
 	"\/tag.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/tag.php",
 		"oF": 0
 		},
-	"\/template-demo.php": {
+	"\/template-page-landing.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/template-demo.php",
+		"oAP": "\/template-page-landing.php",
 		"oF": 0
 		}
 	},
@@ -403,7 +572,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 501045157,
-	"displayValue": "sbstrt-blank",
+	"displayValue": "flux-landing",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-wonka"
 	},
@@ -1715,7 +1884,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/sbstrt-blank:8888\/",
+	"externalServerAddress": "http:\/\/fx-int-br:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",

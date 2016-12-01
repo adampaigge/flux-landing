@@ -1,4 +1,4 @@
-### [HTML5 Blank](http://SbstrtBlank.com) Changelog
+### [SbstrtBlank Blank](http://SbstrtBlank.com) Changelog
 
 ## 1.4.3 (02 December, 2013)
 
@@ -37,7 +37,7 @@
 
 * Added WAI-ARIA landmark roles to enrich semantics and improve accessibility. [Stacey Cordoni](https://github.com/staceycordoni) [#32](https://github.com/toddmotto/SbstrtBlank/pull/32)
 * Added WAI-ARIA 'role=button' to search form &lt;button&gt;
-* Upgrade search input type from 'type=text' to 'type=search' for better use of HTML5 alongside WAI-ARIA
+* Upgrade search input type from 'type=text' to 'type=search' for better use of SbstrtBlank alongside WAI-ARIA
 
 ## 1.3.8 (02 April, 2013)
 
@@ -80,7 +80,7 @@
 * Change pagination ID to class for better CSS
 * Improve indentation in 404.php for child element
 * Update screenshot.png
-* Update default HTML5 Blank logo and gravatar
+* Update default SbstrtBlank Blank logo and gravatar
 
 ## 1.3.4 (22 March, 2013)
 
@@ -88,7 +88,7 @@
 * Replaced &lt;aside&gt; id with a class for better CSS
 * Better naming conventions for search form, more class focused
 * Removed JavaScript onfocus/onblur events in search input
-* Replaced onfocus/onblur events with HTML5 placeholder for 'Search' (this is fine for non-supporting browsers as the search button indicates it's a search input)
+* Replaced onfocus/onblur events with SbstrtBlank placeholder for 'Search' (this is fine for non-supporting browsers as the search button indicates it's a search input)
 * Search &lt;input&gt; has been replaced to a &lt;button&gt; for more flexibility, allows HTML content
 * Removed font-smoothing from Opera and Mozilla as no longer supported
 
@@ -111,15 +111,15 @@
 * CSS indentation formatting, new lines for shared selectors
 * Update jQuery to version 1.9.1, Google CDN and CloudFlare CDN
 * Update Conditionizr to CDNJS CloudFlare v2.1.1
-* Removed mediaqueries.min.js, do we really need older browsers to be responsive, HTML5Shiv (built-in Modernizr) is enough
+* Removed mediaqueries.min.js, do we really need older browsers to be responsive, SbstrtBlankShiv (built-in Modernizr) is enough
 * Updated scripts.js to ride off Modernizr.svg feature detect and remove custom script detect
 
 ## 1.3.0 (09 February, 2013)
 
 * Remove jquery.min.js 'local' fallback from /js/ folder, simply fallback to another CDN (CloudFlare), see footer.php, saves code and maintenance across all sites
 * Remove Google Analytics and jQuery fallback from functions.php injection, added manually in footer.php
-* Setup Conditionizr to supply an HTML5Shim to Less Than IE9 browsers
-* Updates Conditionizr to v1.2.0, enhanced retina detection and unlimited 'customScript', for polyfill usage (e.g. using respond.js and html5shim together)
+* Setup Conditionizr to supply an SbstrtBlankShim to Less Than IE9 browsers
+* Updates Conditionizr to v1.2.0, enhanced retina detection and unlimited 'customScript', for polyfill usage (e.g. using respond.js and SbstrtBlankshim together)
 * Added Romanian language translation file to /languages/
 
 ## 1.2.9 (03 February, 2013)
@@ -236,7 +236,7 @@
 * Added Custom Background support into functions.php
 * Remove WordPress Admin bar by default
 * Remove 'text/css' from enqueued stylesheet
-* Updated screenshot.png logo to new HTML5 Blank branding
+* Updated screenshot.png logo to new SbstrtBlank Blank branding
 * CSS change, :focus changed to input:focus as FireFox was adding focus styles to any element
 * CSS change, new Chrome updates renders fonts thicker, reduced font-weight on body from 400 to 300
 * CSS change, create non-semantic section below media queries, moved text-selection colors etc

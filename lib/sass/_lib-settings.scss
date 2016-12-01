@@ -1,0 +1,42 @@
+
+//Standard Positions
+@mixin pos-Relative {
+    position: relative; display: inline-block; float: left;
+}
+
+@mixin pos-Middle {
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+@mixin pos-Fixed {
+    position: fixed;
+    margin: 0; padding: 0;
+}
+
+@mixin pos-Absolute {
+    position: absolute;
+    margin: 0; padding: 0;
+}
+
+@mixin pos-Cover {
+    top:0; right:0; bottom: 0; left: 0;
+    width: auto; height: auto;
+}
+
+
+
+//Flex Containewrs
+@mixin flx-VH {
+    display: -webkit-flex; display: flex;
+    -webkit-flex-direction: column; flex-direction: column;
+    -webkit-align-items: center; align-items: center;
+    -webkit-justify-content: center; justify-content: center;
+}
+
+@mixin flx-H {
+    display: -webkit-flex; display: flex;
+    -webkit-flex-direction: row; flex-direction: row;
+    -webkit-align-items: center; align-items: center;
+    -webkit-justify-content: center; justify-content: center;
+}

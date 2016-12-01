@@ -1,8 +1,8 @@
-# [HTML5 Blank](http://SbstrtBlank.com) License
+# [SbstrtBlank Blank](http://SbstrtBlank.com) License
 
 ## MIT License
 
-Copyright &copy; 2013 HTML5 Blank // @SbstrtBlank
+Copyright &copy; 2013 SbstrtBlank Blank // @SbstrtBlank
 
 Built by Todd Motto // @toddmotto
 

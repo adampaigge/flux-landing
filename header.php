@@ -12,6 +12,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
+		<!-- Font Server -->
+		<script type="text/javascript" src="//fast.fonts.net/jsapi/34a16449-cd63-4478-9b74-36678baaedc2.js"></script>
+
 		<?php wp_head(); ?>
 		<script>
 		var templateDir = "<?php bloginfo('template_directory') ?>";
@@ -23,3 +26,10 @@
 
 	</head>
 	<body <?php body_class(); ?>>
+		<header class="site-hdr-wrp">
+			<img class="site-lgo-hdr" src="<?php echo get_template_directory_uri(); ?>/lib/asset/img/FluxLogo-Lockup.svg" />
+			<nav class="site-nav-wrp">
+				<ul class="site-nav-inr"><?php wp_nav_menu( array( 'items_wrap' => '%3$s', 'theme_location' => 'header-menu' ) ); ?></ul>
+			</nav>
+		</header>
+		<div class="site-bg"></div>

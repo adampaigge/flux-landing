@@ -1,0 +1,107 @@
+body {
+
+}
+
+    .site-bg {
+        position: fixed; z-index: 0;
+
+        top: 0; right: 0; bottom: 0; left: 0;
+
+        background-image: url('lib/asset/img/FluxLanding-BG.jpg');
+        background-attachment: fixed;
+        background-position: bottom center;
+        background-size: cover;
+    }
+
+    .site-hdr-wrp {
+        position: fixed; z-index: 100;
+
+        top: 40px; right: 40px; left: 40px;
+        width: auto; height: 40px;
+    }
+
+        .site-lgo-hdr {
+            @include pos-Relative;
+            width: auto; height: 40px;
+        }
+
+        .site-nav-wrp {
+            @include pos-Relative; float: right;
+            width: auto; height: 40px;
+        }
+
+            .site-nav-inr {
+                @include pos-Relative;
+                margin: 0; padding: 0;
+                width: auto; height: 40px;
+
+                list-style: none;
+            }
+
+                .site-nav-inr .menu-item {
+                    @include pos-Relative;
+                    margin: 0; padding: 0 20px;
+
+                    width: auto; height: 40px;
+
+                    background-color: rgba($col-dark, 0.75);
+                }
+
+                    .site-nav-inr .menu-item a {
+                        @include pos-Relative;
+                        width: 100%;
+
+                        font-family: $font-Thin; font-size: 18px; line-height: 40px; letter-spacing: 1px;
+                        text-align: center;
+                    }
+
+                .site-nav-inr .menu-item:before {
+                    @include pos-Absolute;
+                    top: 0; right: -13px;
+                    content: ' ';
+                   width: 0;
+                   height: 0;
+                   border-left: 13px solid rgba($col-dark, 0.75);
+                   border-top: 20px solid transparent;
+                   border-bottom: 20px solid transparent;
+                }
+
+            .site-nav-inr .menu-item:after {
+                @include pos-Absolute;
+                top: 0; left: -13px;
+                content: ' ';
+               width: 0;
+               height: 0;
+               border-right: 13px solid rgba($col-dark, 0.75);
+               border-top: 20px solid transparent;
+               border-bottom: 20px solid transparent;
+            }
+
+
+
+
+
+
+//HOMEPAGE
+.homepage-content {
+    @include pos-Fixed; @include flx-VH;
+
+    top: 0; right: 0; left: 0;
+    width: auto; height: 100vh;
+}
+
+.homepage-lgo-wrp {
+    @include pos-Relative;
+    width: 100%; height: 80px;
+
+    font-family: $font-UltLt; font-size: 110px; line-height: 80px; letter-spacing: 10px;
+    text-transform: uppercase; text-align: center;
+}
+
+.homepage-lgotxt {
+    @include pos-Relative; float: none;
+    margin-right: 30px;
+    top: -1px;
+    width: auto; height: 80px;
+
+}

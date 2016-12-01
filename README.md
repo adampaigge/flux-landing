@@ -1,4 +1,4 @@
-# [HTML5 Blank](http://SbstrtBlank.com)
+# [SbstrtBlank Blank](http://SbstrtBlank.com)
 
 Powerful shell for rapidly deploying your WordPress projects.
 
@@ -10,37 +10,37 @@ Powerful shell for rapidly deploying your WordPress projects.
 ## Contributors (in order of pull request)
 [David Munn](https://github.com/Munnday), [Patrick Zeinert](https://github.com/CoeusCC), [J-Rabe](https://github.com/J-Rabe), [Steve Steiner](https://github.com/ssteinerx), [Kyle Hudson](https://github.com/diskhub), [chrisdl](https://github.com/chrisdl), [Marcel Miranda](https://github.com/reaktivo), [Fx Bénard](https://github.com/fxbenard), Ioan Virag, [Mohamed Elkebir](https://github.com/elkebirmed), [lregla](https://github.com/lregla), Carlos Pinar, [Joshua Lyman](https://github.com/jlyman), [Kevin Plattret](https://github.com/kevinplattret), [Wesllei Henrique](https://github.com/wesllei), [Stacey Cordoni](https://github.com/staceycordoni).
 
-## Getting Started with HTML5 Blank
+## Getting Started with SbstrtBlank Blank
 
 Download the latest version from [SbstrtBlank.com](http://SbstrtBlank.com)
 
-## Get involved! Make HTML5 Blank better
+## Get involved! Make SbstrtBlank Blank better
 
 There are a few ways to get involved, submit a Pull Request, or submit a comment on the website - [SbstrtBlank.com](http://SbstrtBlank.com)
 
 ## Features
 
-### HTML5
-* Basic Semantic HTML5 Markup
+### SbstrtBlank
+* Basic Semantic SbstrtBlank Markup
 * W3C Valid Code Foundations
 * Responsive Ready, ViewPort meta data
-* HTML Class support for IE7, IE8, IE9 Conditionals (HTML5 Boilerplate)
+* HTML Class support for IE7, IE8, IE9 Conditionals (SbstrtBlank Boilerplate)
 * Clean, neatly organised code, with PHP annotations
 
 ### jQuery + JavaScript
 * Replaced built-in WordPress enqueue with Google CDN
-* Protocol relative jQuery if Google CDN offline (HTML5 Boilerplate)
+* Protocol relative jQuery if Google CDN offline (SbstrtBlank Boilerplate)
 * Conditionizr for cross-platform/device detects and enhancements
-* Modernizr feature detection, HTML5 element support for legacy, progressive enhancement (HTML5 Boilerplate)
+* Modernizr feature detection, SbstrtBlank element support for legacy, progressive enhancement (SbstrtBlank Boilerplate)
 * DOM Ready JavaScript file setup (scripts.js) for instant JavaScript development
 * JavaScript files enqueued using WordPress functions into wp_head
 
 ### CSS3
-* HTML5 Boilerplate reset
+* SbstrtBlank Boilerplate reset
 * Media Queries framework for instant development using @media
 * @font-face empty framework with Fonts folder setup ready for new custom fonts
 * CSS3 custom selection styles
-* Inline print styles (HTML5 Boilerplate)
+* Inline print styles (SbstrtBlank Boilerplate)
 * Body element config, including Optimize Legibility for kerning and font-smoothing
 * Replaced focus styles to avoid blue blur in field elements, replaced with border
 * Stylesheet enqueued using WordPress functions into wp_head
@@ -64,7 +64,7 @@ There are a few ways to get involved, submit a Pull Request, or submit a comment
 
 ### Theme Files and Functionality
 * Built in Pagination, no plugins (strips out prev + next post and gives page numbers)
-* Optimised Google Analytics in footer (HTML5 Boilerplate)
+* Optimised Google Analytics in footer (SbstrtBlank Boilerplate)
 * Widget Area Sidebar support, functions in place to get developing
 * Custom Search Form included (searchform.php) - fully editable
 * Tags support for showing Post Tags

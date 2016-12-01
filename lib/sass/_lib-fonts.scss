@@ -1,0 +1,23 @@
+/*font-family:'Helvetica Neue LT W01_25 UltLt';
+font-family:'Helvetica Neue LT W01_35 Thin';
+font-family:'Helvetica Neue LT W01_55 Roman';
+font-family:'Helvetica Neue LT W01_71488914';
+font-family:'Helvetica Neue LT W01_95 Black';
+*/
+
+$font-UltLt: 'Helvetica Neue LT W01_25 UltLt', sans-serif;
+$font-Thin: 'Helvetica Neue LT W01_35 Thin', sans-serif;
+$font-Roman: 'Helvetica Neue LT W01_55 Roman', sans-serif;
+$font-Bold: 'Helvetica Neue LT W01_71488914', sans-serif;
+$font-Black: 'Helvetica Neue LT W01_95 Black', sans-serif;
+
+body {
+    font-family: $font-Roman;
+    font-size: 14px; line-height: 20px;
+    color: #FFF;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
