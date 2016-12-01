@@ -4,6 +4,7 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 	<div class="homepage-content">
 		<div class="homepage-lgo-wrp"><img class="homepage-lgotxt" src="<?php echo get_template_directory_uri(); ?>/lib/asset/img/FluxLogo-Text.svg" /><?php the_title(); ?></div>
+		<h1>Nossa missão é descentralizar o poder político para incluir todas as pessoas</h1>
 	</div>
 
 	<?php the_content(); ?>
