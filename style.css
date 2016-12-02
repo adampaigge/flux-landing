@@ -79,22 +79,11 @@ h1 {
   position: relative;
   display: inline-block;
   float: left;
-  margin: 0;
+  margin: 0 0 0 35px;
   padding: 0 20px;
   width: auto;
   height: 40px;
   background-color: rgba(33, 33, 43, 0.75); }
-
-.site-nav-inr .menu-item a {
-  position: relative;
-  display: inline-block;
-  float: left;
-  width: 100%;
-  font-family: "Helvetica Neue LT W01_35 Thin", sans-serif;
-  font-size: 18px;
-  line-height: 40px;
-  letter-spacing: 1px;
-  text-align: center; }
 
 .site-nav-inr .menu-item:before {
   position: absolute;
@@ -121,6 +110,35 @@ h1 {
   border-right: 13px solid rgba(33, 33, 43, 0.75);
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent; }
+
+.site-nav-inr .menu-item a {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 100%;
+  font-family: "Helvetica Neue LT W01_35 Thin", sans-serif;
+  font-size: 18px;
+  line-height: 37px;
+  letter-spacing: 1px;
+  text-align: center; }
+
+.wpml-ls-item {
+  padding: 0 5px !important;
+  width: 15px !important;
+  height: 40px; }
+
+.wpml-ls-item a {
+  left: -3px;
+  width: 21px !important;
+  height: 40px;
+  font-size: 15px !important;
+  line-height: 40px !important;
+  text-transform: uppercase;
+  text-overflow: clip;
+  overflow: hidden; }
+
+.wpml-ls-current-language a span {
+  font-family: "Helvetica Neue LT W01_71488914", sans-serif !important; }
 
 .homepage-content {
   position: fixed;
