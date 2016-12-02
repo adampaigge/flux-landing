@@ -5,7 +5,7 @@
 	<div class="homepage-block-wrp homepage-block-content-wrp">
 		<div class="homepage-lgo-wrp"><img class="homepage-lgotxt" src="<?php echo get_template_directory_uri(); ?>/lib/asset/img/FluxLogo-Text.svg" /><?php the_title(); ?></div>
 		<h1 class="homepage-txt-wrp"><?php the_field("page_intro") ?></h1>
-		<a href="#" class="btn-hex bgc-orng brd-orng" id="btn-cta">Join Now</a>
+		<a href="#" class="btn-hex bgc-orng brd-orng blend-multiply" id="btn-cta">Join Now</a>
 	</div>
 	<div class="homepage-block-wrp homepage-block-signup-wrp">
 		<div class="homepage-signup-inr homepage-signup-form-wrp">

@@ -51,9 +51,12 @@ a:hover,
 a:active {
 	outline:0;
 }
-input:focus {
-	outline:0;
-	border:1px solid #04A4CC;
+input:focus, textarea:focus {
+	outline:0 !important;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #9B9BB0 inset;
 }
 
 /*------------------------------------*\

@@ -43,7 +43,12 @@
 
 
 //Breakpoints
-//Breakpoints
 $canvas-bp-lrg: 1080px;
 $canvas-bp-med: 768px;
 $canvas-bp-sml: 414px;
+
+
+//Options
+.blend-multiply {
+    mix-blend-mode: exclusion;
+}

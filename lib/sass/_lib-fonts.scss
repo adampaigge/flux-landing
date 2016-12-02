@@ -23,7 +23,8 @@ p {
     font-family: $font-Thin;
     font-size: 18px; line-height: 20px;
     letter-spacing: 1px;
-    color: rgba(#FFF, 0.65);
+    color: $col-grey;
+    text-align: center;
 }
 
 a {
@@ -41,6 +42,23 @@ h1 {
     font-family: $font-UltLt;
     font-size: 40px; line-height: 40px;
     text-align: center;
+}
+
+@media only screen
+and (max-width: $canvas-bp-lrg) {
+
+}
+
+@media only screen
+and (max-width: $canvas-bp-med) {
+
+}
+
+@media only screen
+and (max-width: $canvas-bp-sml) {
+    h1 {
+        font-size: 28px; line-height: 30px;
+    }
 }
 
 
