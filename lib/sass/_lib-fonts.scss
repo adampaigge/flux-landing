@@ -17,9 +17,24 @@ body {
     color: #FFF;
 }
 
+p {
+    @include pos-Relative;
+    margin: 0 0 20px 0; padding: 0;
+    font-family: $font-Thin;
+    font-size: 18px; line-height: 20px;
+    letter-spacing: 1px;
+    color: rgba(#FFF, 0.65);
+}
+
 a {
     color: #FFF;
     text-decoration: none;
+}
+
+h1, h2, h3 {
+    @include pos-Relative;
+    margin: 0 0 20px 0; padding: 0;
+    color: #FFF;
 }
 
 h1 {

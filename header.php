@@ -7,15 +7,18 @@
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
-		<!-- Font Server -->
-		<script type="text/javascript" src="//fast.fonts.net/jsapi/34a16449-cd63-4478-9b74-36678baaedc2.js"></script>
+
 
 		<?php wp_head(); ?>
+		<!-- Font Server -->
+		<script type="text/javascript" src="//fast.fonts.net/jsapi/34a16449-cd63-4478-9b74-36678baaedc2.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 		<script>
 		var templateDir = "<?php bloginfo('template_directory') ?>";
         conditionizr.config({
@@ -28,7 +31,7 @@
 	<body <?php body_class(); ?>>
 		<!-- <div class="grid-mid"></div> -->
 		<header class="site-hdr-wrp">
-			<img class="site-lgo-hdr" src="<?php echo get_template_directory_uri(); ?>/lib/asset/img/FluxLogo-Lockup.svg" />
+			<img class="site-lgo-hdr" src="<?php echo get_template_directory_uri(); ?>/lib/asset/img/FluxLogo-Lockup.svg" /><div class="site-lgo-sub"><?php the_title(); ?></div>
 			<nav class="site-nav-wrp">
 				<ul class="site-nav-inr"><?php wp_nav_menu( array( 'items_wrap' => '%3$s', 'theme_location' => 'header-menu' ) ); ?></ul>
 			</nav>
