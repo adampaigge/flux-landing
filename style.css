@@ -350,6 +350,32 @@ h1 {
   border-top: 20px solid transparent !important;
   border-bottom: 20px solid transparent !important; }
 
+.brd-angle:before {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: -13px;
+  content: ' ';
+  width: 0;
+  height: 0;
+  border-left: 13px solid rgba(33, 33, 43, 0.75);
+  border-top: 20px solid transparent !important;
+  border-bottom: 20px solid transparent !important; }
+
+.brd-angle:after {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: -13px;
+  content: ' ';
+  width: 0;
+  height: 0;
+  border-right: 13px solid rgba(33, 33, 43, 0.75);
+  border-top: 20px solid transparent !important;
+  border-bottom: 20px solid transparent !important; }
+
 body {
   overflow: hidden;
   background-color: #000; }
@@ -384,6 +410,12 @@ body {
   left: 40px;
   width: auto;
   height: 40px; }
+
+.site-hdr-inr {
+  position: relative;
+  display: inline-block;
+  float: left;
+  cursor: pointer; }
 
 .site-lgo-hdr {
   position: relative;
@@ -431,8 +463,7 @@ body {
   padding: 0 20px;
   width: auto;
   height: 40px;
-  background-color: rgba(33, 33, 43, 0.75);
-  mix-blend-mode: exclusion; }
+  background-color: rgba(33, 33, 43, 0.75); }
 
 .site-nav-inr .menu-item:before {
   border-left: 13px solid rgba(33, 33, 43, 0.75); }
@@ -613,19 +644,22 @@ body {
 .site-input-textarea {
   height: auto; }
 
-::-webkit-input-placeholder {
+.site-input:active, .site-input:hover {
   color: #FFF; }
+
+::-webkit-input-placeholder {
+  color: #9B9BB0; }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #FFF; }
+  color: #9B9BB0; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #FFF; }
+  color: #9B9BB0; }
 
 :-ms-input-placeholder {
-  color: #FFF; }
+  color: #9B9BB0; }
 
 .site-submit {
   position: relative;
@@ -641,44 +675,78 @@ body {
   line-height: 40px;
   letter-spacing: 1px;
   text-align: center;
-  color: #FFF;
-  background-color: rgba(33, 33, 43, 0.75);
+  color: #9B9BB0;
   border: none;
   mix-blend-mode: exclusion;
-  -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  -ms-transition: all 250ms ease;
-  -o-transition: all 250ms ease;
-  transition: all 250ms ease; }
+  -webkit-transition: color 250ms;
+  -moz-transition: color 250ms;
+  -ms-transition: color 250ms;
+  -o-transition: color 250ms;
+  transition: color 250ms; }
 
 .site-submit:hover {
-  mix-blend-mode: multiply; }
+  color: #FFF !important;
+  width: 250px; }
 
-.site-submit:before {
+.site-close-bar {
   position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  right: -13px;
-  content: ' ';
-  width: 0;
-  height: 0;
-  border-left: 13px solid rgba(33, 33, 43, 0.75);
-  border-top: 20px solid transparent !important;
-  border-bottom: 20px solid transparent !important; }
+  width: 1px;
+  height: 20px;
+  background-color: #9B9BB0; }
 
-.site-submit:after {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left: -13px;
-  content: ' ';
-  width: 0;
-  height: 0;
-  border-right: 13px solid rgba(33, 33, 43, 0.75);
-  border-top: 20px solid transparent !important;
-  border-bottom: 20px solid transparent !important; }
+.site-close-bar-1 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.site-close-bar-2 {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.site-input-checkbox-wrp {
+  color: #9B9BB0 !important; }
+
+.site-input-checkbox {
+  position: relative;
+  display: inline-block;
+  float: left;
+  float: none;
+  top: 1px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #9B9BB0;
+  border-radius: 50%;
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+.site-input-checkbox:hover {
+  border-color: #FFF;
+  border-width: 3px; }
+
+.site-input-checkbox:checked {
+  border: none;
+  background: #FFF; }
+
+.site-input-checkbox-label {
+  cursor: pointer;
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms; }
+
+.site-input-checkbox-label:hover, .site-input-checkbox-label:checked {
+  color: #FFF; }
 
 @media only screen and (max-width: 768px) {
   .site-form-wrp {

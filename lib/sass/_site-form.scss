@@ -25,24 +25,28 @@
             mix-blend-mode: exclusion;
         }
 
-    .site-input-textarea {
-        height: auto;
-    }
+        .site-input-textarea {
+            height: auto;
+        }
+
+        .site-input:active, .site-input:hover {
+            color: #FFF;
+        }
 
     ::-webkit-input-placeholder {
-       color: #FFF;
+       color: $col-grey;
     }
 
     :-moz-placeholder { /* Firefox 18- */
-       color: #FFF;
+       color: $col-grey;
     }
 
     ::-moz-placeholder {  /* Firefox 19+ */
-       color: #FFF;
+       color: $col-grey;
     }
 
     :-ms-input-placeholder {
-       color: #FFF;
+       color: $col-grey;
     }
 
 
@@ -54,44 +58,98 @@
 
         font-family: $font-Bold; font-size: 20px; line-height: 40px; letter-spacing: 1px;
         text-align: center;
-        color: #FFF;
+        color: $col-grey;
 
-        background-color: rgba($col-dark, 0.75);
         border: none;
         mix-blend-mode: exclusion;
 
-        -webkit-transition: all 250ms ease;
-        -moz-transition: all 250ms ease;
-        -ms-transition: all 250ms ease;
-        -o-transition: all 250ms ease;
-        transition: all 250ms ease;
+        -webkit-transition: color 250ms;
+        -moz-transition: color 250ms;
+        -ms-transition: color 250ms;
+        -o-transition: color 250ms;
+        transition: color 250ms;
     }
 
     .site-submit:hover {
-        mix-blend-mode: multiply;
+        color: #FFF !important;
+        width: 250px;
     }
 
-    .site-submit:before {
-        @include pos-Absolute;
-        top: 0; right: -13px;
-        content: ' ';
-        width: 0;
-        height: 0;
-        border-left: 13px solid rgba($col-dark, 0.75);
-        border-top: 20px solid transparent !important;
-        border-bottom: 20px solid transparent !important;
+
+
+    .site-close {
+
     }
 
-    .site-submit:after {
-        @include pos-Absolute;
-        top: 0; left: -13px;
-        content: ' ';
-        width: 0;
-        height: 0;
-        border-right: 13px solid rgba($col-dark, 0.75);
-        border-top: 20px solid transparent !important;
-        border-bottom: 20px solid transparent !important;
+        .site-close-bar {
+            position: absolute;
+
+            width: 1px; height: 20px;
+
+            background-color: $col-grey;
+        }
+
+        .site-close-bar-1 {
+            -webkit-transform:rotate(45deg);
+            -moz-transform:rotate(45deg);
+            -ms-transform:rotate(45deg);
+            -o-transform:rotate(45deg);
+            transform:rotate(45deg);
+        }
+
+        .site-close-bar-2 {
+            -webkit-transform:rotate(-45deg);
+            -moz-transform:rotate(-45deg);
+            -ms-transform:rotate(-45deg);
+            -o-transform:rotate(-45deg);
+            transform:rotate(-45deg);
+        }
+
+
+    .site-input-checkbox-wrp {
+        color: $col-grey !important;
     }
+
+        .site-input-checkbox {
+            @include pos-Relative; float: none;
+            top: 1px;
+            width: 15px; height: 15px;
+
+            border: 1px solid $col-grey;
+            border-radius: 50%;
+
+            -webkit-transition: all 250ms;
+            -moz-transition: all 250ms;
+            -ms-transition: all 250ms;
+            -o-transition: all 250ms;
+            transition: all 250ms;
+
+            -webkit-appearance:none;
+            -moz-appearance:none;
+        }
+
+        .site-input-checkbox:hover {
+            border-color: #FFF;
+            border-width: 3px;
+        }
+
+        .site-input-checkbox:checked {
+            border: none;
+            background: #FFF;
+        }
+
+        .site-input-checkbox-label {
+            cursor: pointer;
+            -webkit-transition: all 250ms;
+            -moz-transition: all 250ms;
+            -ms-transition: all 250ms;
+            -o-transition: all 250ms;
+            transition: all 250ms;
+        }
+
+        .site-input-checkbox-label:hover, .site-input-checkbox-label:checked {
+            color: #FFF;
+        }
 
 
     @media only screen

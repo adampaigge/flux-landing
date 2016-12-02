@@ -12,10 +12,14 @@
 			<h1><?php the_field('form_intro') ?></h1>
 			<?php the_field('form_text'); ?>
 			<form class="site-form-wrp" id="formContact">
-				<input class="site-input" id="name" name="Name" type="text" placeholder="Name">
+				<input class="site-input" id="name" name="Name" type="text" placeholder="Full Name">
 				<input class="site-input" id="email" name="Email" type="email" placeholder="Email">
-				<textarea class="site-input site-input-textarea" id="message" name="Message" rows="2" placeholder="Message"></textarea>
-				<button type="submit" class="site-submit">Send</button>
+				<textarea class="site-input site-input-textarea" id="message" name="Message to Organisers" rows="2" placeholder="Message to the Organiser"></textarea>
+				<div class="site-input site-input-checkbox-wrp">
+					<input class="site-input-checkbox" id="checkbox-Voulenteer" type="checkbox" name="Voulenteer" value="True"> <label for="checkbox-Voulenteer" class="site-input-checkbox-label">I'd like to Volunteer</label>
+				</div>
+				<button type="submit" class="site-submit bgc-dark brd-dark brd-angle">Send</button>
+				<!-- <a href="#" class="site-submit site-close blend-multiply bgc-dark brd-dark brd-angle" id="btn-cta"><div class="site-close-bar site-close-bar-1"></div><div class="site-close-bar site-close-bar-2"></div></a> -->
 			</form>
 		</div>
 		<div class="homepage-signup-inr homepage-signup-rsp homepage-signup-rsp-success">

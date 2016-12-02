@@ -1,0 +1,22 @@
+//Angle Border
+.brd-angle:before {
+    @include pos-Absolute;
+    top: 0; right: -13px;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-left: 13px solid rgba($col-dark, 0.75);
+    border-top: 20px solid transparent !important;
+    border-bottom: 20px solid transparent !important;
+}
+
+.brd-angle:after {
+    @include pos-Absolute;
+    top: 0; left: -13px;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-right: 13px solid rgba($col-dark, 0.75);
+    border-top: 20px solid transparent !important;
+    border-bottom: 20px solid transparent !important;
+}
