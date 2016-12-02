@@ -292,7 +292,6 @@ h1, h2, h3 {
   color: #FFF; }
 
 h1 {
-  padding: 0 25%;
   font-family: "Helvetica Neue LT W01_25 UltLt", sans-serif;
   font-size: 40px;
   line-height: 40px;
@@ -341,7 +340,8 @@ h1 {
   border-bottom: 20px solid transparent !important; }
 
 body {
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #000; }
 
 .site-bg {
   position: fixed;
@@ -351,9 +351,9 @@ body {
   bottom: 0;
   left: 0;
   background-image: url("lib/asset/img/FluxLanding-BG.jpg");
-  background-attachment: fixed;
   background-position: bottom center;
-  background-size: cover; }
+  background-size: 100vw auto;
+  background-repeat: no-repeat; }
 
 .site-content {
   position: relative;
@@ -458,10 +458,7 @@ body {
 .wpml-ls-current-language a span {
   font-family: "Helvetica Neue LT W01_71488914", sans-serif !important; }
 
-.homepage-content {
-  position: fixed;
-  margin: 0;
-  padding: 0;
+.homepage-block-wrp {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -470,6 +467,12 @@ body {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
+  padding: 40px !important; }
+
+.homepage-block-content-wrp {
+  position: fixed;
+  margin: 0;
+  padding: 0;
   top: 0;
   left: 0;
   width: 100vw;
@@ -503,7 +506,36 @@ body {
 .homepage-txt-wrp {
   margin-bottom: 30px; }
 
-.homepage-signup {
+@media only screen and (max-width: 768px) {
+  .homepage-lgo-wrp {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    height: 70px;
+    font-family: "Helvetica Neue LT W01_25 UltLt", sans-serif;
+    font-size: 95px;
+    line-height: 70px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center; }
+  .homepage-lgotxt {
+    position: relative;
+    display: inline-block;
+    float: left;
+    float: none;
+    margin-right: 30px;
+    top: -1px;
+    width: auto;
+    height: 70px; } }
+
+.homepage-block-signup-wrp {
+  position: relative;
+  display: inline-block;
+  float: left;
+  top: 100vh;
+  width: 100vw;
+  height: 100vh; }
+
+.homepage-signup-inr {
   position: relative;
   display: inline-block;
   float: left;
@@ -515,9 +547,12 @@ body {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
-  top: 100vh;
-  width: 100vw;
-  height: 100vh; }
+  width: 100%;
+  height: auto; }
+
+.homepage-signup-rsp {
+  opacity: 0;
+  visibility: hidden; }
 
 .site-form-wrp {
   position: relative;
