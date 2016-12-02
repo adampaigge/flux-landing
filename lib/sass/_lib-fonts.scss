@@ -28,3 +28,40 @@ h1 {
     font-size: 40px; line-height: 40px;
     text-align: center;
 }
+
+
+
+//Buttons
+.btn-hex {
+    @include pos-Relative;
+    margin: 0; padding: 0 20px;
+
+    width: auto; height: 40px;
+
+    background-color: rgba($col-dark, 0.75);
+
+    font-family: $font-Bold; font-size: 20px; line-height: 37px; letter-spacing: 1px;
+    text-align: center; text-transform: uppercase;
+}
+
+.site-nav-inr .menu-item:before, .btn-hex:before {
+    @include pos-Absolute;
+    top: 0; right: -13px;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-left: 13px solid;
+    border-top: 20px solid transparent !important;
+    border-bottom: 20px solid transparent !important;
+}
+
+.site-nav-inr .menu-item:after, .btn-hex:after {
+    @include pos-Absolute;
+    top: 0; left: -13px;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-right: 13px solid;
+    border-top: 20px solid transparent !important;
+    border-bottom: 20px solid transparent !important;
+}

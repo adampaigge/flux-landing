@@ -2,3 +2,14 @@ $col-dark: #21212B;
 $col-orng: #FF4500;
 $col-purp: #9B9BB0;
 $col-grey: #6553A1;
+
+$col-grp: (('dark', $col-dark), ('orng', $col-orng), ('purp', $col-purp), ('grey', $col-grey));
+
+@each $colLbl, $colVal in $col-grp {
+	//Background Colours Classes
+	.bgc-#{$colLbl} { background-color: #{$colVal} !important; }
+    //Border Colours Classes
+	.brd-#{$colLbl}, .brd-#{$colLbl}:before, .brd-#{$colLbl}:after { border-color: #{$colVal} !important; }
+    //Text Colours Classes
+	.txt-#{$colLbl}, a.txt-#{$colLbl}, .txt-#{$colLbl} p { color: #{$colVal} !important; }
+}

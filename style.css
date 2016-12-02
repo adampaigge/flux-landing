@@ -6,6 +6,255 @@
 	Author: Andrew Brown (@mstrbrwn)
 	Author URI: http://substrate.digital
 */
+/*------------------------------------*    MAIN
+\*------------------------------------*/
+/* global box-sizing */
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+/* html element 62.5% font-size for REM use */
+html {
+  font-size: 62.5%; }
+
+body {
+  font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #444; }
+
+/* clear */
+.clear:before,
+.clear:after {
+  content: ' ';
+  display: table; }
+
+.clear:after {
+  clear: both; }
+
+.clear {
+  *zoom: 1; }
+
+img {
+  max-width: 100%;
+  vertical-align: bottom; }
+
+a {
+  color: #444;
+  text-decoration: none; }
+
+a:hover {
+  color: #444; }
+
+a:focus {
+  outline: 0; }
+
+a:hover,
+a:active {
+  outline: 0; }
+
+input:focus {
+  outline: 0;
+  border: 1px solid #04A4CC; }
+
+/*------------------------------------*    STRUCTURE
+\*------------------------------------*/
+/* wrapper */
+.wrapper {
+  max-width: 1280px;
+  width: 95%;
+  margin: 0 auto;
+  position: relative; }
+
+/* header */
+/* logo */
+/* nav */
+/* sidebar */
+/* footer */
+/*------------------------------------*    PAGES
+\*------------------------------------*/
+/*------------------------------------*    IMAGES
+\*------------------------------------*/
+/*------------------------------------*	TYPOGRAPHY
+\*------------------------------------*/
+@font-face {
+  font-family: 'Font-Name';
+  src: url("fonts/font-name.eot");
+  src: url("fonts/font-name.eot?#iefix") format("embedded-opentype"), url("fonts/font-name.woff") format("woff"), url("fonts/font-name.ttf") format("truetype"), url("fonts/font-name.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*------------------------------------*    RESPONSIVE
+\*------------------------------------*/
+/*------------------------------------*    MISC
+\*------------------------------------*/
+::selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none; }
+
+::-webkit-selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none; }
+
+::-moz-selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none; }
+
+/*------------------------------------*    WORDPRESS CORE
+\*------------------------------------*/
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption {
+  background: #FFF;
+  border: 1px solid #F0F0F0;
+  max-width: 96%;
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+/*------------------------------------*    PRINT
+\*------------------------------------*/
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
+  tr, img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  @page {
+    margin: 0.5cm; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+.grid-mid {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: calc(50vw + 1px);
+  border-left: 1px solid aqua; }
+
+.bgc-dark {
+  background-color: #21212B !important; }
+
+.brd-dark, .brd-dark:before, .brd-dark:after {
+  border-color: #21212B !important; }
+
+.txt-dark, a.txt-dark, .txt-dark p {
+  color: #21212B !important; }
+
+.bgc-orng {
+  background-color: #FF4500 !important; }
+
+.brd-orng, .brd-orng:before, .brd-orng:after {
+  border-color: #FF4500 !important; }
+
+.txt-orng, a.txt-orng, .txt-orng p {
+  color: #FF4500 !important; }
+
+.bgc-purp {
+  background-color: #9B9BB0 !important; }
+
+.brd-purp, .brd-purp:before, .brd-purp:after {
+  border-color: #9B9BB0 !important; }
+
+.txt-purp, a.txt-purp, .txt-purp p {
+  color: #9B9BB0 !important; }
+
+.bgc-grey {
+  background-color: #6553A1 !important; }
+
+.brd-grey, .brd-grey:before, .brd-grey:after {
+  border-color: #6553A1 !important; }
+
+.txt-grey, a.txt-grey, .txt-grey p {
+  color: #6553A1 !important; }
+
 /*font-family:'Helvetica Neue LT W01_25 UltLt';
 font-family:'Helvetica Neue LT W01_35 Thin';
 font-family:'Helvetica Neue LT W01_55 Roman';
@@ -29,6 +278,51 @@ h1 {
   line-height: 40px;
   text-align: center; }
 
+.btn-hex {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  padding: 0 20px;
+  width: auto;
+  height: 40px;
+  background-color: rgba(33, 33, 43, 0.75);
+  font-family: "Helvetica Neue LT W01_71488914", sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.site-nav-inr .menu-item:before, .btn-hex:before {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: -13px;
+  content: ' ';
+  width: 0;
+  height: 0;
+  border-left: 13px solid;
+  border-top: 20px solid transparent !important;
+  border-bottom: 20px solid transparent !important; }
+
+.site-nav-inr .menu-item:after, .btn-hex:after {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: -13px;
+  content: ' ';
+  width: 0;
+  height: 0;
+  border-right: 13px solid;
+  border-top: 20px solid transparent !important;
+  border-bottom: 20px solid transparent !important; }
+
+body {
+  overflow: hidden; }
+
 .site-bg {
   position: fixed;
   z-index: 0;
@@ -41,8 +335,20 @@ h1 {
   background-position: bottom center;
   background-size: cover; }
 
+.site-content {
+  position: relative;
+  display: inline-block;
+  float: left;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100vh;
+  -webkit-scroll-snap-type: mandatory;
+  -webkit-scroll-snap-points-y: repeat(calc(100vh - 1px)); }
+
 .site-hdr-wrp {
   position: fixed;
+  margin: 0;
+  padding: 0;
   z-index: 100;
   top: 40px;
   right: 40px;
@@ -86,30 +392,10 @@ h1 {
   background-color: rgba(33, 33, 43, 0.75); }
 
 .site-nav-inr .menu-item:before {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  right: -13px;
-  content: ' ';
-  width: 0;
-  height: 0;
-  border-left: 13px solid rgba(33, 33, 43, 0.75);
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent; }
+  border-left: 13px solid rgba(33, 33, 43, 0.75); }
 
 .site-nav-inr .menu-item:after {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left: -13px;
-  content: ' ';
-  width: 0;
-  height: 0;
-  border-right: 13px solid rgba(33, 33, 43, 0.75);
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent; }
+  border-right: 13px solid rgba(33, 33, 43, 0.75); }
 
 .site-nav-inr .menu-item a {
   position: relative;
@@ -124,15 +410,16 @@ h1 {
 
 .wpml-ls-item {
   padding: 0 5px !important;
-  width: 15px !important;
+  width: 23px !important;
   height: 40px; }
 
 .wpml-ls-item a {
-  left: -3px;
-  width: 21px !important;
+  left: -4px;
+  width: 23px !important;
   height: 40px;
   font-size: 15px !important;
-  line-height: 40px !important;
+  line-height: 39px !important;
+  text-align: center;
   text-transform: uppercase;
   text-overflow: clip;
   overflow: hidden; }
@@ -141,9 +428,9 @@ h1 {
   font-family: "Helvetica Neue LT W01_71488914", sans-serif !important; }
 
 .homepage-content {
-  position: fixed;
-  margin: 0;
-  padding: 0;
+  position: relative;
+  display: inline-block;
+  float: left;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -152,10 +439,7 @@ h1 {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: auto;
+  width: 100vw;
   height: 100vh; }
 
 .homepage-lgo-wrp {
@@ -181,5 +465,20 @@ h1 {
   top: -1px;
   width: auto;
   height: 80px; }
+
+.homepage-signup {
+  position: relative;
+  display: inline-block;
+  float: left;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh; }
 
 /*# sourceMappingURL=style.css.map */
