@@ -151,6 +151,14 @@
 		"oAP": "\/languages\/pt_BR.po",
 		"oF": 0
 		},
+	"\/lib\/asset\/img\/Flux-OG.jpg": {
+		"ft": 16384,
+		"iS": 211322,
+		"oA": 0,
+		"oAP": "\/lib\/asset\/img\/Flux-OG.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/lib\/asset\/img\/FluxLanding-BG.jpg": {
 		"ft": 16384,
 		"iS": 1424464,

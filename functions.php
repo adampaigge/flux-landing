@@ -122,13 +122,6 @@ function SbstrtBlank_styles()
     wp_enqueue_style('SbstrtBlank'); // Enqueue it!
 }
 
-// Register SbstrtBlank Blank Navigation
-function register_SbstrtBlank_menu()
-{
-    register_nav_menus(array( // Using array to specify more menus if needed
-        'header-menu' => __('Header Menu', 'SbstrtBlank'), // Main Navigation
-    ));
-}
 
 // Remove the <div> surrounding the dynamic navigation to cleanup markup
 function my_wp_nav_menu_args($args = '')
@@ -342,8 +335,6 @@ add_action('init', 'SbstrtBlank_header_scripts'); // Add Custom Scripts to wp_he
 add_action('wp_print_scripts', 'SbstrtBlank_conditional_scripts'); // Add Conditional Page Scripts
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'SbstrtBlank_styles'); // Add Theme Stylesheet
-add_action('init', 'register_SbstrtBlank_menu'); // Add SbstrtBlank Blank Menu
-add_action('init', 'create_post_type_SbstrtBlank'); // Add our SbstrtBlank Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'SbstrtBlankwp_pagination'); // Add our SbstrtBlank Pagination
 
@@ -394,42 +385,6 @@ add_shortcode('SbstrtBlank_shortcode_demo_2', 'SbstrtBlank_shortcode_demo_2'); /
 \*------------------------------------*/
 
 // Create 1 Custom Post type for a Demo, called SbstrtBlank-Blank
-function create_post_type_SbstrtBlank()
-{
-    register_taxonomy_for_object_type('category', 'SbstrtBlank-blank'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('post_tag', 'SbstrtBlank-blank');
-    register_post_type('SbstrtBlank-blank', // Register Custom Post Type
-        array(
-        'labels' => array(
-            'name' => __('SbstrtBlank Blank Custom Post', 'SbstrtBlank'), // Rename these to suit
-            'singular_name' => __('SbstrtBlank Blank Custom Post', 'SbstrtBlank'),
-            'add_new' => __('Add New', 'SbstrtBlank'),
-            'add_new_item' => __('Add New SbstrtBlank Blank Custom Post', 'SbstrtBlank'),
-            'edit' => __('Edit', 'SbstrtBlank'),
-            'edit_item' => __('Edit SbstrtBlank Blank Custom Post', 'SbstrtBlank'),
-            'new_item' => __('New SbstrtBlank Blank Custom Post', 'SbstrtBlank'),
-            'view' => __('View SbstrtBlank Blank Custom Post', 'SbstrtBlank'),
-            'view_item' => __('View SbstrtBlank Blank Custom Post', 'SbstrtBlank'),
-            'search_items' => __('Search SbstrtBlank Blank Custom Post', 'SbstrtBlank'),
-            'not_found' => __('No SbstrtBlank Blank Custom Posts found', 'SbstrtBlank'),
-            'not_found_in_trash' => __('No SbstrtBlank Blank Custom Posts found in Trash', 'SbstrtBlank')
-        ),
-        'public' => true,
-        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
-        'has_archive' => true,
-        'supports' => array(
-            'title',
-            'editor',
-            'excerpt',
-            'thumbnail'
-        ), // Go to Dashboard Custom SbstrtBlank Blank post for supports
-        'can_export' => true, // Allows export in Tools > Export
-        'taxonomies' => array(
-            'post_tag',
-            'category'
-        ) // Add Category and Post Tags support
-    ));
-}
 
 /*------------------------------------*\
 	ShortCode Functions
@@ -446,5 +401,53 @@ function SbstrtBlank_shortcode_demo_2($atts, $content = null) // Demo Heading H2
 {
     return '<h2>' . $content . '</h2>';
 }
+
+//Add Open Graph Meta Info from the actual article data, or customize as necessary
+function facebook_open_graph() {
+    global $post;
+    if ( !is_singular()) //if it is not a post or a page
+        return;
+	if($excerpt = $post->post_excerpt)
+        {
+			$excerpt = strip_tags($post->post_excerpt);
+		$excerpt = str_replace("", "'", $excerpt);
+    	}
+    	else
+    	{
+        		$excerpt = get_bloginfo('description');
+	}
+
+    $metaTitle = get_the_title();
+
+    //You'll need to find you Facebook profile Id and add it as the admin
+    echo '<meta property="fb:admins" content="100003264376054"/>'."\n";
+    echo '<meta property="og:title" content="'.$metaTitle.'"/>'."\n";
+    echo '<meta property="og:description" content="' . $excerpt . '"/>'."\n";
+    echo '<meta property="og:type" content="article"/>';
+    echo '<meta property="og:url" content="' . get_permalink() . '"/>'."\n";
+
+    //Let's also add some Twitter related meta data
+    echo '<meta name="twitter:card" content="summary" />'."\n";
+
+    //This is the site Twitter @username to be used at the footer of the card
+    echo '<meta name="twitter:site" content="@MoneyBrilliant />'."\n";
+
+    // Customize the below with the name of your site
+    echo '<meta property="og:site_name" content="Your Site NAME Goes HERE"/>'."\n";
+
+    $imgSrc = get_template_directory_uri()."/lib/asset/img/Flux-OG.jpg";
+    // $bgImg = buildBgImg($post->ID, 'large', 'get_sub_');
+
+    //
+    // if(has_post_thumbnail( $post->ID )) {
+    //     $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
+    //     $imgSrc = $thumbnail_src[0];
+    // } else if($bgImg[bgiURL]) {
+    //     $imgSrc = $bgImg[bgiURL];
+    // }
+
+    echo '<meta property="og:image" content="'.esc_attr($imgSrc).'"/>'."\n";
+}
+add_action( 'wp_head', 'facebook_open_graph', 5 );
 
 ?>
