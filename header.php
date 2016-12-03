@@ -32,7 +32,9 @@
 		<!-- <div class="grid-mid"></div> -->
 		<header class="site-hdr-wrp">
 			<div class="site-hdr-inr">
-				<img class="site-lgo-hdr" src="<?php echo get_template_directory_uri(); ?>/lib/asset/img/FluxLogo-Lockup.svg" /><div class="site-lgo-sub"><?php the_title(); ?></div>
+				<img class="site-lgo-hdr" src="<?php echo get_template_directory_uri(); ?>/lib/asset/img/FluxLogo-Icon.png" />
+				<img class="site-lgo-hdr site-lgo-hdr-txt" src="<?php echo get_template_directory_uri(); ?>/lib/asset/img/FluxLogo-Text.svg" />
+				<div class="site-lgo-sub"><?php the_title(); ?></div>
 			</div>
 			<nav class="site-nav-wrp">
 				<ul class="site-nav-inr"><?php wp_nav_menu( array( 'items_wrap' => '%3$s', 'theme_location' => 'header-menu' ) ); ?></ul>

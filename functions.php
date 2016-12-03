@@ -421,8 +421,8 @@ function facebook_open_graph() {
 
     //You'll need to find you Facebook profile Id and add it as the admin
     echo '<meta property="fb:admins" content="100003264376054"/>'."\n";
-    echo '<meta property="og:title" content="'.$metaTitle.'"/>'."\n";
-    echo '<meta property="og:description" content="' . $excerpt . '"/>'."\n";
+    echo '<meta property="og:title" content="Flux Brazil"/>'."\n";
+    echo '<meta property="og:description" content="Vote on bills, not politicians. Vote for changes, not promises. A party for a new democracy."/>'."\n";
     echo '<meta property="og:type" content="article"/>';
     echo '<meta property="og:url" content="' . get_permalink() . '"/>'."\n";
 
@@ -430,10 +430,10 @@ function facebook_open_graph() {
     echo '<meta name="twitter:card" content="summary" />'."\n";
 
     //This is the site Twitter @username to be used at the footer of the card
-    echo '<meta name="twitter:site" content="@MoneyBrilliant />'."\n";
+    echo '<meta name="twitter:site" content="@voteflux />'."\n";
 
     // Customize the below with the name of your site
-    echo '<meta property="og:site_name" content="Your Site NAME Goes HERE"/>'."\n";
+    echo '<meta property="og:site_name" content="Flux Brazil"/>'."\n";
 
     $imgSrc = get_template_directory_uri()."/lib/asset/img/Flux-OG.jpg";
     // $bgImg = buildBgImg($post->ID, 'large', 'get_sub_');

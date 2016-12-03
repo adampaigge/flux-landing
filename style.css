@@ -424,15 +424,23 @@ body {
   width: auto;
   height: 40px; }
 
+.site-lgo-hdr-txt {
+  top: 10px;
+  height: 20px;
+  margin-left: 10px; }
+
 .site-lgo-sub {
   position: relative;
   display: inline-block;
   float: left;
   opacity: 0;
-  padding-top: 1px;
-  padding-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 10px;
+  top: 0px;
+  width: 0;
   font-family: "Helvetica Neue LT W01_35 Thin", sans-serif;
-  font-size: 21px;
+  font-size: 28px;
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: uppercase; }
@@ -501,7 +509,13 @@ body {
 .wpml-ls-current-language a span {
   font-family: "Helvetica Neue LT W01_71488914", sans-serif !important; }
 
+@media only screen and (max-width: 800px) {
+  .site-lgo-hdr-txt {
+    display: none; } }
+
 @media only screen and (max-width: 414px) {
+  .site-lgo-sub {
+    display: none; }
   .menu-item {
     display: none !important; }
   .wpml-ls-item {
@@ -555,7 +569,7 @@ body {
 .homepage-txt-wrp {
   margin-bottom: 30px; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .homepage-lgo-wrp {
     margin-bottom: 20px;
     padding-left: 20px;
@@ -638,7 +652,7 @@ body {
   color: #FFF;
   border: none;
   background: none;
-  background-image: linear-gradient(90deg, rgba(33, 33, 43, 0) 0%, rgba(33, 33, 43, 0.75) 25%, rgba(33, 33, 43, 0.75) 75%, rgba(33, 33, 43, 0) 100%);
+  background-image: linear-gradient(90deg, rgba(33, 33, 43, 0) 0%, #21212b 25%, #21212b 75%, rgba(33, 33, 43, 0) 100%);
   mix-blend-mode: exclusion; }
 
 .site-input-textarea {
@@ -748,7 +762,7 @@ body {
 .site-input-checkbox-label:hover, .site-input-checkbox-label:checked {
   color: #FFF; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .site-form-wrp {
     width: 100%; } }
 

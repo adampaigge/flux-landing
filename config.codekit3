@@ -107,7 +107,7 @@
 		"oA": 0,
 		"oAP": "\/img\/icons\/touch.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/img\/logo.png": {
 		"ft": 32768,
@@ -157,7 +157,7 @@
 		"oA": 0,
 		"oAP": "\/lib\/asset\/img\/Flux-OG.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/lib\/asset\/img\/FluxLanding-BG.jpg": {
 		"ft": 16384,
@@ -166,6 +166,14 @@
 		"oAP": "\/lib\/asset\/img\/FluxLanding-BG.jpg",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/lib\/asset\/img\/FluxLogo-Icon.png": {
+		"ft": 32768,
+		"iS": 17333,
+		"oA": 0,
+		"oAP": "\/lib\/asset\/img\/FluxLogo-Icon.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/lib\/asset\/img\/FluxLogo-Lockup.svg": {
 		"ft": 2097152,
